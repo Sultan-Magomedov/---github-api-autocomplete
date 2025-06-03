@@ -20,7 +20,6 @@ const getRepositories = async function () {
         `https://api.github.com/search/repositories?q=${input.value}&sort=stars&order=desc&per_page=5`
       );
       data = await request.json();
-      console.log(data);
       let dropdownHtml = "";
       for (item of data.items) {
         dropdownHtml += `<li class="dropdown__item">${item.name}</li>`;
