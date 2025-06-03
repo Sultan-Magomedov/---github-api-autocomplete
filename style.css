@@ -21,10 +21,13 @@ body {
 }
 .dropdown__item {
   height: 44px;
+  width: 500px;
   background: #e3e3e3;
   border: 2px solid black;
   font-size: 30px;
   padding-left: 13px;
+
+  overflow: hidden;
 }
 .dropdown__item:hover {
   background: #65cdf9;
@@ -40,6 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 101px;
+  width: 480px;
   background: #e27beb;
   border: 1px solid black;
   font-size: 24px;
